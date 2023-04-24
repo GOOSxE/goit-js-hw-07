@@ -9,7 +9,7 @@ const galleryListUrl = document.querySelector(".gallery");
 const newGalleryItems = galleryItems
   .map(
     (image) =>
-      `<li class=gallery__item><a class=gallery__link href=${image.original}><img class=gallery__image src=${image.preview} data-source=${image.original} alt='${image.description}'></img></a></li>`
+      `<li class=gallery__item><a class=gallery__link href=${image.original}><img class=gallery__image src=${image.preview} alt='${image.description}'></img></a></li>`
   )
   .join("");
 
@@ -22,4 +22,5 @@ new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
 });
+
 // *
